@@ -1,0 +1,166 @@
+////
+/// David Witt Theme
+////
+
+$border-radius: 0;
+
+////
+/// Theme colors
+////
+
+$theme-purple: #a177ff;
+$theme-light-blue: #02ceff;
+$theme-dark-blue: #a177ff;
+$theme-pink: #ff6d92;
+$theme-orange: #f5b200;
+$theme-red: #fc636b;
+
+@import "../mixins/settings.global";
+@import "../blaze";
+
+// ... add class overrides here ...
+
+////
+/// Gradient backgrounds
+////
+.c-background-purple-blue {
+	background: $theme-purple;
+  background: linear-gradient(45deg, $theme-purple, $theme-dark-blue);
+}
+
+.c-background-light-dark-blue {
+	background: $theme-light-blue;
+  background: linear-gradient(45deg, $theme-dark-blue, $theme-light-blue);
+  background-size: 120%;
+}
+
+.c-background-orange-red {
+  background: $theme-pink;
+  background: $theme-pink radial-gradient(circle at center, $theme-orange 0, $theme-red 30%, $theme-pink 70%);
+  background-size: 300vw 300vh;
+  background-position: -100vw -120vh;
+}
+
+////
+/// Header
+////
+
+.c-hero {
+  position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+	text-align: center;
+	color: #fff;
+	padding: 50px 0;
+	box-shadow: 0 0 7px 0 rgba(0,0,0,0.15);
+
+	@include screen--medium-and-up {
+		min-height: 400px;
+
+		h2 {
+			padding: 0;
+		}
+	}
+}
+
+////
+/// Ecommerce
+////
+
+#ecommerce {
+	h1 {
+		color: $theme-light-blue;
+	}
+}
+
+////
+/// Toolbox
+////
+
+#toolbox {
+	h1 {
+		color: $theme-red;
+	}
+}
+
+////
+/// Projects
+////
+
+#projects {
+	h1 {
+		color: $theme-pink;
+	}
+}
+
+////
+/// Footer
+////
+
+.c-footer {
+	position: relative;
+	overflow: hidden;
+	min-height: 100px;
+	box-shadow: 0 0 7px 0 rgba(0,0,0,0.15);
+	color: #fff;
+	margin-top: 50px;
+}
+
+.c-footer-copyright {
+	text-align: center;
+
+	@include screen--large-and-up {
+		text-align: left;
+	}
+}
+
+.c-footer-social {
+	text-align: center;
+}
+
+.c-footer-colophon {
+	text-align: center;
+
+	@include screen--large-and-up {
+		text-align: right;
+	}
+}
+
+////
+/// Utilities
+////
+
+.u-text-center {
+	text-align: center;
+}
+
+.u-vertical-center {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.u-full-width {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+////
+/// Card Component
+////
+
+.c-card {
+	background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.15);
+  display: inline-block;
+  margin: 20px 0 10px;
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+  width: 100%;
+
+  &__pad {
+  	padding: 30px;
+  }
+}

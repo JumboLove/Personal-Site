@@ -1,0 +1,49 @@
+{
+  "name": "personalsite_davidwitt",
+  "version": "1.0.0",
+  "description": "Personal Site for David Witt",
+  "main": "dist/blaze.min.css",
+  "files": [
+    "dist",
+    "scss"
+  ],
+  "scripts": {
+    "build": "gulp",
+    "test": "percy snapshot demo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JumboLove/personal_site.git"
+  },
+  "keywords": [
+    "html5",
+    "sass",
+    "scss",
+    "css",
+    "bem",
+    "itcss",
+    "bemit",
+    "ui",
+    "ux",
+    "framework",
+    "components"
+  ],
+  "author": "David Witt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JumboLove/personal_site/issues"
+  },
+  "homepage": "http://davidwitt.me",
+  "devDependencies": {
+    "file-exists": "^1.0.0",
+    "gulp": "~3.9.1",
+    "gulp-cssnano": "~2.1.2",
+    "gulp-header": "^1.8.7",
+    "gulp-rename": "~1.2.2",
+    "gulp-sass": "~2.3.2",
+    "gulp-size": "^2.1.0",
+    "minimist": "^1.2.0",
+    "np": "^2.5.0",
+    "run-sequence": "^1.2.1"
+  }
+}
