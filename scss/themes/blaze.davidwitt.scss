@@ -18,7 +18,12 @@ $theme-red: #fc636b;
 @import "../mixins/settings.global";
 @import "../blaze";
 
+///Plugins
+@import "../lib/iziModal";
+
 // ... add class overrides here ...
+
+@import "../poi";
 
 ////
 /// Gradient backgrounds
@@ -163,4 +168,16 @@ $theme-red: #fc636b;
   &__pad {
   	padding: 30px;
   }
+}
+
+////
+/// Point of Interest Component
+////
+
+.c-poi {
+	position: relative;
+}
+
+.c-poi__image {
+
 }
