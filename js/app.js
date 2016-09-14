@@ -40,5 +40,6 @@
 	//Initalize functions for page load
 	initIziModalEventHandlers();
 	initIziModals();
+	initializePOI();
 
 }(window.jQuery, window, document));
