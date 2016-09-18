@@ -1,0 +1,21 @@
+////
+/// Gradient backgrounds
+////
+
+.c-background-purple-blue {
+	background: $theme-purple;
+ 	background: linear-gradient(45deg, $theme-purple, $theme-dark-blue);
+}
+
+.c-background-light-dark-blue {
+	background: $theme-light-blue;
+	background: linear-gradient(45deg, $theme-dark-blue, $theme-light-blue);
+	background-size: 120%;
+}
+
+.c-background-orange-red {
+	background: $theme-pink;
+	background: $theme-pink radial-gradient(circle at center, $theme-orange 0, $theme-red 30%, $theme-pink 70%);
+	background-size: 300vw 300vh;
+	background-position: -100vw -120vh;
+}

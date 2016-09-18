@@ -1,0 +1,42 @@
+////
+/// Footer
+////
+
+.c-footer {
+	position: relative;
+	overflow: hidden;
+	min-height: 100px;
+	box-shadow: 0 0 7px 0 rgba(0,0,0,0.15);
+	color: #fff;
+	margin-top: 50px;
+}
+
+.c-footer-copyright {
+	text-align: center;
+
+	@include screen--large-and-up {
+		text-align: left;
+	}
+}
+
+.c-footer-social {
+	text-align: center;
+
+	a {
+		color: white;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+}
+
+.c-footer-colophon {
+	text-align: center;
+
+	@include screen--large-and-up {
+		text-align: right;
+	}
+}

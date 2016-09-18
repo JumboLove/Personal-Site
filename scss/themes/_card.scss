@@ -1,0 +1,18 @@
+////
+/// Card Component
+////
+
+.c-card {
+	background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.15);
+  display: inline-block;
+  margin: 20px 0 10px;
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+  width: 100%;
+
+  &__pad {
+  	padding: 30px;
+  }
+}

@@ -1,0 +1,21 @@
+////
+/// Header
+////
+
+.c-hero {
+  position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+	text-align: center;
+	color: #fff;
+	padding: 50px 0;
+	box-shadow: 0 0 7px 0 rgba(0,0,0,0.15);
+
+	@include screen--medium-and-up {
+		min-height: 400px;
+
+		h2 {
+			padding: 0;
+		}
+	}
+}
