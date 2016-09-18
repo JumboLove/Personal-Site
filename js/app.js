@@ -16,7 +16,7 @@
 			transitionOut: 'fadeOutDown',
 			transitionInOverlay: 'fadeIn',
 			transitionOutOverlay: 'fadeOuts',
-			width: '80%'
+			width: '1347px'
 		});
 	}
 

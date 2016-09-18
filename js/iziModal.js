@@ -200,7 +200,7 @@
 
 	        	that.width = that.$element.outerWidth();
 
-				that.mediaQueries = '<style rel="' + that.id + '">@media handheld, only screen and (max-width: ' + that.width + 'px) { #' + that.id + '{ width: 100% !important; max-width: 100% !important; margin-left: 0 !important; left: 0 !important; border-radius:0!important} #' + that.id + ' .'+PLUGIN_NAME+'-header{border-radius:0!important} }</style>';
+				that.mediaQueries = '<style rel="' + that.id + '">@media handheld, only screen and (max-width: ' + wClear + 'px) { #' + that.id + '{ width: 100% !important; max-width: 100% !important; margin-left: 0 !important; left: 0 !important; border-radius:0!important} #' + that.id + ' .'+PLUGIN_NAME+'-header{border-radius:0!important} }</style>';
 
 	        	$(document.body).append(that.mediaQueries);
 
