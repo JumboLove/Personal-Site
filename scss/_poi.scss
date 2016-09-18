@@ -5,8 +5,8 @@
 
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 90%;
-  max-width: 1170px;
+  width: 100%;
+  //max-width: 1200px;
   margin: 0 auto;
 }
 .cd-container:after {
@@ -106,22 +106,56 @@
 ////
 /// Coordinates of points
 ////
-.cd-single-point:nth-of-type(1) {
-  bottom: 40%;
-  right: 30%;
+
+#sears-modal {
+  .cd-single-point:nth-of-type(1) {
+    bottom: 50%;
+    left: 15%;
+  }
+  .cd-single-point:nth-of-type(2) {
+    top: 35%;
+    left: 21%;
+  }
+  .cd-single-point:nth-of-type(3) {
+    top: 6%;
+    left: 42%;
+  }
+  .cd-single-point:nth-of-type(4) {
+    bottom: 56%;
+    right: 40%;
+  }
 }
-.cd-single-point:nth-of-type(2) {
-  bottom: 24%;
-  right: 46%;
+
+#nixon-modal {
+  .cd-single-point:nth-of-type(1) {
+    top: 9%;
+    left: 20%;
+  }
+  .cd-single-point:nth-of-type(2) {
+    top: 41%;
+    right: 41%;
+  }
+  .cd-single-point:nth-of-type(3) {
+    top: 9%;
+    right: 18%;
+  }
 }
-.cd-single-point:nth-of-type(3) {
-  top: 28%;
-  left: 20%;
+
+#puma-modal {
+  .cd-single-point:nth-of-type(1) {
+    top: 31%;
+    right: 44%;
+  }
+  .cd-single-point:nth-of-type(2) {
+    top: 14%;
+    right: 5%;
+  }
+  .cd-single-point:nth-of-type(3) {
+    bottom: 8%;
+    left: 39%;
+  }
 }
-.cd-single-point:nth-of-type(4) {
-  top: 20%;
-  right: 22%;
-}
+
 .cd-single-point.is-open > a {
   background-color: $theme-dark-blue;
 }
@@ -261,8 +295,8 @@
 @media only screen and (min-width: 600px) {
   .cd-single-point .cd-more-info {
     position: absolute;
-    width: 220px;
-    height: 240px;
+    width: 250px;
+    height: 220px;
     padding: 1em;
     overflow-y: visible;
     line-height: 1.4;
@@ -341,6 +375,7 @@
   .cd-single-point .cd-more-info h2 {
     font-size: 20px;
     font-size: 1.25rem;
+    margin-top: 0;
     margin-bottom: 0;
   }
   .cd-single-point .cd-more-info p {

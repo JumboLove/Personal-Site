@@ -15,13 +15,15 @@
 			transitionIn: 'fadeInUp',
 			transitionOut: 'fadeOutDown',
 			transitionInOverlay: 'fadeIn',
-			transitionOutOverlay: 'fadeOuts'
+			transitionOutOverlay: 'fadeOuts',
+			width: '80%'
 		});
 	}
 
 	function initializePOI() {
 		//open interest point description
-		$('.cd-single-point').children('a').on('click', function(){
+		$('.cd-single-point').children('a').on('click', function(e){
+			e.preventDefault();
 			var selectedPoint = $(this).parent('li');
 			if( selectedPoint.hasClass('is-open') ) {
 				selectedPoint.removeClass('is-open').addClass('visited');
