@@ -155,6 +155,10 @@ $theme-red: #fc636b;
 	margin: 0 20%;
 }
 
+[data-modal-open] {
+	cursor: pointer;
+}
+
 ////
 /// Card Component
 ////
