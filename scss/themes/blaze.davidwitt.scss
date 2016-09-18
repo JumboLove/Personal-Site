@@ -121,6 +121,16 @@ $theme-red: #fc636b;
 
 .c-footer-social {
 	text-align: center;
+
+	a {
+		color: white;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
 }
 
 .c-footer-colophon {
