@@ -16,3 +16,11 @@
   	padding: 30px;
   }
 }
+
+.c-ecommerce-header {
+  font-size: 3.2vw;
+
+  @include screen--large-and-up {
+    font-size: 2em;
+  }
+}

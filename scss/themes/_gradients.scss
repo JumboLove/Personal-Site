@@ -19,3 +19,45 @@
 	background-size: 300vw 300vh;
 	background-position: -100vw -120vh;
 }
+
+////
+/// Gradient text
+////
+
+@mixin gradient-text($gradient, $bg : 'light') {
+  @supports(mix-blend-mode: lighten) {
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+
+      background: unquote($gradient);
+      pointer-events: none;
+    }
+
+    @if ($bg == 'light') {
+      color: #000;
+      background: #fff;
+      mix-blend-mode: multiply;
+
+      &::before {
+        mix-blend-mode: screen;
+      }
+    } @else {
+      color: #fff;
+      background: #000;
+      mix-blend-mode: lighten;
+
+      &::before {
+        mix-blend-mode: multiply;
+      }
+    }
+  }
+}
+
+.c-gradient-text--light-dark-blue {
+  @include gradient-text('linear-gradient(45deg, #{$theme-dark-blue}, #{$theme-light-blue});', 'light');
+}
