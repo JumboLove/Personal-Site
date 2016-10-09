@@ -10,14 +10,23 @@
 	color: #fff;
 	box-shadow: 0 0 7px 0 rgba(0,0,0,0.15);
 
+	h1 {
+		font-size: 14.3vw;
+	}
+
 	h2 {
 		padding: 0.3em 0;
 		font-size: 2.4em;
+		font-size: 9.5vw;
 	}
 
 	@include screen--medium-and-up {
 		min-height: 480px;
 		padding: 50px 0;
+
+		h1 {
+			font-size: 4em;
+		}
 
 		h2 {
 			padding: 0;

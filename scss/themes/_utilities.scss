@@ -19,7 +19,7 @@
 }
 
 .u-middle-tighten {
-	margin: 0 20%;
+	margin: 0 10%;
 }
 
 [data-modal-open] {
@@ -40,4 +40,42 @@
 
 .u-color--pink {
 	color: $theme-pink;
+}
+
+////
+/// Positioning
+////
+
+.u-align--top {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.u-align--bottom {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.u-align--right {
+	padding-right: 0;
+	margin-right: 0;
+	text-align: right;
+}
+
+.u-align--left {
+	padding-left: 0;
+	margin-left: 0;
+	text-align: left;
+}
+
+////
+/// Spacing
+////
+
+.u-pad--bottom {
+	padding-bottom: 3em;
+}
+
+.u-pad--top {
+	padding-top: 3em;
 }
